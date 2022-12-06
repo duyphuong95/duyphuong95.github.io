@@ -1,0 +1,24 @@
+{
+  "name": "duyphuong95.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/styles.scss:css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duyphuong95/duyphuong95.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duyphuong95/duyphuong95.github.io/issues"
+  },
+  "homepage": "https://github.com/duyphuong95/duyphuong95.github.io#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}
