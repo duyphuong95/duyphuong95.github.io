@@ -15,7 +15,7 @@
       body {
         height: 100%;
 
-        padding:   0;
+        padding: 0;
 
         margin: 0;
 
@@ -53,6 +53,70 @@
       }
       .btn-wrap {
         display: flex;
+      }
+
+      .a-litle-gift {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .a-litle-gift img {
+        cursor: pointer;
+        animation: ring 0.5s infinite;
+      }
+
+      @keyframes ring {
+        0% {
+          transform: rotate(-4deg);
+        }
+        20% {
+          transform: rotate(-1deg);
+        }
+        50% {
+          transform: rotate(1deg);
+        }
+        100% {
+          transform: rotate(4deg);
+        }
+      }
+
+      .a-litle-gift p {
+        color: white;
+        margin-top: 25px;
+      }
+
+      .container {
+        display: inline-block;
+      }
+
+      .typed {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid;
+        width: 0;
+        animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blinking {
+        0% {
+          border-right-color: transparent;
+        }
+        50% {
+          border-right-color: white;
+        }
+        100% {
+          border-right-color: transparent;
+        }
       }
 
       div#btnYes {
@@ -120,6 +184,13 @@
           <a href="javascript:void(0)" class="btn"><span>Từ chối</span></a>
         </div>
       </div>
+      <!-- <div class="a-litle-gift">
+        <p>
+          hmmm, Em có muốn ngắm sao đang bay cùng anh không? <br />
+          Sẽ là một món quà nho nhỏ dành tặng em, hi vọng em sẽ thích nó
+        </p>
+        <img src="./img/gift_3_icon-icons.com_74641.png" id="eleGift" />
+      </div> -->
     </div>
     <script>
       /*
@@ -376,6 +447,7 @@
       const eleStepOne = document.getElementById("stepOne");
       const btnYes = document.getElementById("btnYes");
       const btnNo = document.getElementById("btnNo");
+      const eleGift = document.getElementById("eleGift");
 
       btnYes.addEventListener("click", () => {
         eleStepOne.style.display = "none";
@@ -383,10 +455,14 @@
       });
 
       btnNo.addEventListener("mouseover", function () {
-        btnNo.classList.add("no-hover")
+        btnNo.classList.add("no-hover");
         btnNo.style.left = `${Math.ceil(Math.random() * 90)}%`;
         btnNo.style.top = `${Math.ceil(Math.random() * 90)}%`;
       });
+
+      // eleGift.addEventListener("click", () => {
+      //   window.open("/box.html", "_self")
+      // });
 
       // displayHeart(eleCanvas)
       function displayHeart(canvas) {
