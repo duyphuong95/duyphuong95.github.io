@@ -81,7 +81,7 @@
         }
       }
 
-      .a-litle-gift p {
+      .a-litle-gift h4 {
         color: white;
         margin-top: 25px;
       }
@@ -184,13 +184,13 @@
           <a href="javascript:void(0)" class="btn"><span>Từ chối</span></a>
         </div>
       </div>
-      <!-- <div class="a-litle-gift">
-        <p>
+      <div class="a-litle-gift">
+        <h4>
           hmmm, Em có muốn ngắm sao đang bay cùng anh không? <br />
           Sẽ là một món quà nho nhỏ dành tặng em, hi vọng em sẽ thích nó
-        </p>
+        </h4>
         <img src="./img/gift_3_icon-icons.com_74641.png" id="eleGift" />
-      </div> -->
+      </div>
     </div>
     <script>
       /*
@@ -460,9 +460,9 @@
         btnNo.style.top = `${Math.ceil(Math.random() * 90)}%`;
       });
 
-      // eleGift.addEventListener("click", () => {
-      //   window.open("/box.html", "_self")
-      // });
+      eleGift.addEventListener("click", () => {
+        window.open("/box.html", "_self")
+      });
 
       // displayHeart(eleCanvas)
       function displayHeart(canvas) {

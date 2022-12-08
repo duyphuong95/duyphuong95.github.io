@@ -48,32 +48,32 @@ li {
 
 .minbox li:nth-child(1) {
   transform: translateZ(50px);
-  background-image: url("./img/small1.jpg");
+  background-image: url("../img/min_1.jpg");
 }
 
 .minbox li:nth-child(2) {
   transform: rotateX(180deg) translateZ(50px);
-  background-image: url("./img/small5.jpg");
+  background-image: url("../img/min_2.jpg");
 }
 
 .minbox li:nth-child(3) {
   transform: rotateX(-90deg) translateZ(50px);
-  background-image: url("./img/small3.jpg");
+  background-image: url("../img/min_3.jpg");
 }
 
 .minbox li:nth-child(4) {
   transform: rotateX(90deg) translateZ(50px);
-  background-image: url("./img/small4.jpg");
+  background-image: url("../img/min_4.jpg");
 }
 
 .minbox li:nth-child(5) {
   transform: rotateY(-90deg) translateZ(50px);
-  background-image: url("./img/small6.jpg");
+  background-image: url("../img/min_5.jpg");
 }
 
 .minbox li:nth-child(6) {
   transform: rotateY(90deg) translateZ(50px);
-  background-image: url("./img/small7.jpg");
+  background-image: url("../img/min_6.jpg");
 }
 
 .maxbox li:nth-child(1) {
@@ -122,32 +122,32 @@ li {
 
 .maxbox li:nth-child(1) {
   transform: translateZ(100px);
-  background-image: url("./img/big2.jpg");
+  background-image: url("../img/1.jpg");
 }
 
 .maxbox li:nth-child(2) {
   transform: rotateX(180deg) translateZ(100px);
-  background-image: url("./img/big3.jpg");
+  background-image: url("../img/2.jpg");
 }
 
 .maxbox li:nth-child(3) {
   transform: rotateX(-90deg) translateZ(100px);
-  background-image: url("./img/big5.jpg");
+  background-image: url("../img/3.jpg");
 }
 
 .maxbox li:nth-child(4) {
   transform: rotateX(90deg) translateZ(100px);
-  background-image: url("./img/big8.jpg");
+  background-image: url("../img/4.jpg");
 }
 
 .maxbox li:nth-child(5) {
   transform: rotateY(-90deg) translateZ(100px);
-  background-image: url("./img/big9.jpg");
+  background-image: url("../img/5.jpg");
 }
 
 .maxbox li:nth-child(6) {
   transform: rotateY(90deg) translateZ(100px);
-  background-image: url("./img/big7.jpg");
+  background-image: url("../img/6.jpg");
 }
 
 .box:hover ol li:nth-child(1) {
